@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Abathuthuzeli</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <!-- CountUp.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.7/countUp.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <a href="/index.html" class="brand-link">
+                    <img src="/img/Abathuthuzeli-Logo.png" alt="Logo" class="brand-image"> 
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="nav-links">
+                    <a href="/index.html" class="nav-link">HOME</a>
+                    <a href="/pages/about.html" class="nav-link active">ABOUT US</a>
+                    <a href="/pages/services.html" class="nav-link">OUR SERVICES</a>
+                    <a href="/pages/contact.html" class="nav-link">CONTACT US</a>
+                </div>
+
+                <!-- Quote Button (Desktop) -->
+                <a href="/pages/contact.html" class="quote-btn">Get a Quote</a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-links">
+                    <a href="/index.html" class="nav-link">HOME</a>
+                    <a href="/pages/about.html" class="nav-link active">ABOUT US</a>
+                    <a href="/pages/services.html" class="nav-link">OUR SERVICES</a>
+                    <a href="/pages/contact.html" class="nav-link">CONTACT US</a>
+                    <a href="/pages/contact.html" class="quote-btn">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page content -->
+    <div class="about-container">
+        <div class="content-wrapper">
+            <!-- Hero Section -->
+            <div class="hero-section">
+                <h1>About Abathuthuzeli</h1>
+                <p>A proudly South African company committed to providing quality funeral services and financial solutions.</p>
+            </div>
+
+            <!-- Main Content -->
+            <div class="main-content">
+                <div class="image-section">
+                    <img src="/images/about-hero.jpg" alt="Two Mountains Office">
+                </div>
+                <div class="text-section">
+                    <h2>Our Story</h2>
+                    <p>Founded in 1999 in Phalaborwa, Two Mountains started as a unique entrepreneurial company that manufactured coffins. The company was established with a vision to serve communities with affordable funeral cover and quality funeral services.</p>
+                    <p>Today, with over 90 branches across 5 provinces and more than 800 employees, Two Mountains has grown into one of South Africa's most trusted funeral service providers.</p>
+                    
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <div class="stat-number">
+                                <span id="employeeCount">800</span>+
+                            </div>
+                            <div class="stat-label">Employees</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">
+                                <span id="branchCount">90</span>+
+                            </div>
+                            <div class="stat-label">Branches</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">
+                                <span id="experienceCount">20</span>+
+                            </div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Values Section -->
+            <div class="values-section">
+                <h2>Our Core Values</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-circle">R</div>
+                        <h3>Respect</h3>
+                        <p>We treat everyone with dignity and respect</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-circle">I</div>
+                        <h3>Integrity</h3>
+                        <p>We conduct business with honesty and transparency</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-circle">C</div>
+                        <h3>Commitment</h3>
+                        <p>We are dedicated to serving our communities</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-circle">E</div>
+                        <h3>Empathy</h3>
+                        <p>We understand and share the feelings of others</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-circle">U</div>
+                        <h3>Ubuntu</h3>
+                        <p>We believe in humanity towards others</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>
+                    <a href="tel:0800668539" class="contact-link">
+                        <i data-lucide="phone"></i> 0800 668 539
+                    </a><br>
+                    <a href="mailto:info@twomountains.co.za" class="contact-link">
+                        <i data-lucide="mail"></i> info@twomountains.co.za
+                    </a><br>
+                    <a href="#" class="contact-link">
+                        <i data-lucide="map-pin"></i> 88 2nd Street, Halfway House Estate, Midrand, 1685
+                    </a>
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <p>
+                    Monday - Friday: 8:00 - 17:00<br>
+                    Saturday: 8:00 - 13:00<br>
+                    Sunday: Closed
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Branch Locator</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Abathuthuzeli. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/about.js"></script>
+</body>
+</html> 

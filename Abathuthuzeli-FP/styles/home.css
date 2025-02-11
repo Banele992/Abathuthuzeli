@@ -1,0 +1,470 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 6rem 2rem;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: var(--blue-600);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Callback Card */
+.callback-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: var(--gray-900);
+}
+
+.callback-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--gray-900);
+}
+
+.callback-card p {
+    color: var(--gray-600);
+    margin-bottom: 1.5rem;
+}
+
+.callback-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.callback-form input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 1rem;
+    background: var(--blue-600);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primaryslide {
+    width: 10rem;
+    padding: 1rem;
+    background: #D4AF37;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: var(--blue-700);
+}
+
+/* Services Section */
+.services {
+    padding: 6rem 2rem;
+    background: var(--gray-50);
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--gray-900);
+}
+
+.services-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    color: var(--gray-600);
+    font-size: 1.125rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-content {
+    padding: 2rem;
+}
+
+.service-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--gray-900);
+}
+
+.service-content p {
+    color: var(--gray-600);
+    margin-bottom: 1.5rem;
+}
+
+.btn-link {
+    color: var(--blue-600);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-link:hover {
+    color: var(--blue-700);
+}
+
+/* Mission & Values Section */
+.mission-values {
+    padding: 6rem 2rem;
+    background: var(--gray-900);
+    color: white;
+}
+
+.mission-values .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-header i {
+    font-size: 2rem;
+    color: var(--blue-600);
+}
+
+.section-header h2 {
+    font-size: 2rem;
+}
+
+.values-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.values-list span {
+    background: var(--blue-600);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 500;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 6rem 2rem;
+    background: var(--gray-50);
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: var(--gray-900);
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 1rem;
+}
+
+.quote-icon {
+    color: var(--blue-600);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-text {
+    font-size: 1.125rem;
+    color: var(--gray-600);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-author h4 {
+    color: var(--gray-900);
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.testimonial-author p {
+    color: var(--gray-600);
+}
+
+/* Hero Slider Styles */
+.hero-slider {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    }
+
+    .slide-content img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: contain; 
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    }
+
+.slide-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.slide-text {
+    position: relative;
+    text-align: left;
+    color: white;
+    max-width: 800px;
+    padding: 0 2rem;
+    z-index: 2;
+    margin-left: 10%;
+}
+
+.slide-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.slide-text h2 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #D4AF37;
+}
+
+
+.slide-text p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 600px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #D4AF37;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #B4941F;
+}
+
+/* Swiper Navigation Styles */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 1.5rem;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: white;
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #D4AF37;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .callback-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-values .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero {
+        padding: 4rem 1rem;
+    }
+
+    .services,
+    .mission-values,
+    .testimonials {
+        padding: 4rem 1rem;
+    }
+
+    .slide-text {
+        margin-left: 5%;
+    }
+
+    .slide-text h1 {
+        font-size: 2.5rem;
+        margin-left: 5%;
+    }
+
+    .slide-text h2 {
+        font-size: 1.5rem;
+        margin-left: 5%;
+    }
+
+    .slide-text p {
+        font-size: 1rem;
+        max-width: 100%;
+        margin-left: 5%;
+
+    }
+
+    .btn-primary {
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+
+    .values-list {
+        justify-content: center;
+    }
+} 

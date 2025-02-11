@@ -1,0 +1,195 @@
+/* Navbar Styles */
+.navbar {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    position: relative;
+    z-index: 1000;
+}
+.navbar2 {
+    background-color: transparent;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    position: relative;
+    box-sizing: border-box;
+    
+}
+
+.navbar-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo styles */
+.brand-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.brand-icon {
+    height: 2rem;
+    width: 2rem;
+    color: #025492; 
+}
+
+.brand-text {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Desktop menu */
+.nav-links {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.nav-link {
+    color: #374151; /* gray-700 */
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #025492; /* Changed from #2563eb */
+}
+
+/* Quote button */
+.quote-btn {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .quote-btn {
+        display: block;
+        background-color: #025492; /* Changed from #2563eb */
+        color: white;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.25rem;
+        text-decoration: none;
+        transition: background-color 0.2s;
+    }
+
+    .quote-btn:hover {
+        background-color: #024478; /* Darker shade for hover */
+    }
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+    display: block;
+    padding: 0.5rem;
+    color: #374151; /* gray-700 */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-btn:hover {
+    color: #025492; /* Changed from #2563eb */
+}
+
+.mobile-menu-btn:focus {
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+}
+
+/* Mobile menu */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    z-index: 50;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+}
+
+.mobile-menu .nav-link {
+    font-size: 1.125rem;
+}
+
+.mobile-menu .quote-btn {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .quote-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .logo span {
+        font-size: 1rem;
+    }
+
+    .logo-img {
+        height: 32px;
+    }
+}

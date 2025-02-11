@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Abathuthuzeli - Professional Funeral Services and Insurance Solutions">
+    <meta name="theme-color" content="#2563eb">
+    <title>Abathuthuzeli - Funeral Parlour</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+        // Initialize Lucide icons after the DOM loads
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
+    <script src="js/main.js" defer></script>
+    <script src="js/pages.js" defer></script>
+    <script src="js/components.js" defer></script>
+    <!-- Swiper JS for testimonials -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar2">
+        <div class="navbar-container">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <a href="/index.html" class="brand-link">
+                    <img src="/img/Abathuthuzeli-Logo.png" alt="Logo" class="brand-image"> 
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="nav-links">
+                    <a href="/index.html" class="nav-link active">HOME</a>
+                    <a href="/pages/about.html" class="nav-link">ABOUT US</a>
+                    <a href="/pages/services.html" class="nav-link">OUR SERVICES</a>
+                    <a href="/pages/contact.html" class="nav-link">CONTACT US</a>
+                </div>
+
+                <!-- Quote Button (Desktop) -->
+                <a href="/pages/contact.html" class="quote-btn">Get a Quote</a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-links">
+                    <a href="/index.html" class="nav-link active">HOME</a>
+                    <a href="/pages/about.html" class="nav-link">ABOUT US</a>
+                    <a href="/pages/services.html" class="nav-link">OUR SERVICES</a>
+                    <a href="/pages/contact.html" class="nav-link">CONTACT US</a>
+                    <a href="/pages/contact.html" class="quote-btn">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-slider">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="slide-content" style="background-image: url(/img/Statue.jpg)">
+                            <div class="slide-overlay"></div>
+                            <div class="slide-text">
+                                <h3>WE OFFER A</h3>
+                                <h2>DIGNIFIED LIFE CELEBRATION</h2>
+                                <p>We're available 24 hours a day, 7 days a week, so you'll always have someone to talk to.</p>
+                                <a href="/pages/services.html" class="btn-primaryslide">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="slide-content" style="background-image: url(/img/Tombstone-Flower.jpg)">
+                            <div class="slide-overlay"></div>
+                            <div class="slide-text">
+                                <h3>HONORING</h3>
+                                <h2>CHERISHED MEMORIES</h2>
+                                <p>Creating lasting tributes that honor and celebrate the lives of your loved ones.</p>
+                                <a href="/pages/services.html" class="btn-primaryslide">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="slide-content" style="background-image: url(/img/Candles.jpg)">
+                            <div class="slide-overlay"></div>
+                            <div class="slide-text">
+                                <h3>PERSONALIZED</h3>
+                                <h2>FUNERAL SERVICES</h2>
+                                <p>Together we can create a completely unique and personalised service – the way you want it to be.</p>
+                                <a href="/pages/services.html" class="btn-primaryslide">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>OUR SERVICES</h2>
+                <p class="services-intro">
+                    We are a proudly South African company offering affordable Financial Services and delighting our customers with quality Funeral Service.
+                </p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="images/burial-services.jpg" alt="Burial Services">
+                        <div class="service-content">
+                            <h3>BURIAL SERVICES</h3>
+                            <p>We offer comprehensive burial solutions at the point of death, during the mourning period and at the stage of burial.</p>
+                            <a href="/pages/services.html" class="btn-link">Find Out More</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="images/funeral-cover.jpg" alt="Funeral Cover">
+                        <div class="service-content">
+                            <h3>CASKETS AND COFFINS</h3>
+                            <p>We have a range of funeral cover options to choose from to meet your needs and the needs of those you love.</p>
+                            <a href="/pages/services.html" class="btn-link">Find Out More</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="images/funeral-cover.jpg" alt="Funeral Cover">
+                        <div class="service-content">
+                            <h3>TOMBSTONES</h3>
+                            <p>We have a range of funeral cover options to choose from to meet your needs and the needs of those you love.</p>
+                            <a href="/pages/services.html" class="btn-link">Find Out More</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="images/funeral-cover.jpg" alt="Funeral Cover">
+                        <div class="service-content">
+                            <h3>CREAMATION SERVICES</h3>
+                            <p>We have a range of funeral cover options to choose from to meet your needs and the needs of those you love.</p>
+                            <a href="/pages/services.html" class="btn-link">Find Out More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-values">
+            <div class="container">
+                <div class="mission">
+                    <div class="section-header">
+                        <i data-lucide="target"></i>
+                        <h2>MISSION</h2>
+                    </div>
+                    <p>To be the trusted funeral services provider of choice in the communities we serve by providing market - leading customer service enabled by tailored made micro-insurance products.</p>
+                </div>
+
+                <div class="values">
+                    <div class="section-header">
+                        <i data-lucide="heart"></i>
+                        <h2>VALUES</h2>
+                    </div>
+                    <div class="values-list">
+                        <span>Respect</span>
+                        <span>Integrity</span>
+                        <span>Commitment</span>
+                        <span>Empathy</span>
+                        <span>Ubuntu</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>WHAT OUR CLIENTS SAY</h2>
+                <div class="swiper testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i data-lucide="quote"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Two Mountains made a difficult time much easier for our family. 
+                                    Their service was professional and compassionate."
+                                </p>
+                                <div class="testimonial-author">
+                                    <h4>Sarah M.</h4>
+                                    <p>Johannesburg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more testimonial slides as needed -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <h2>OUR PARTNERS</h2>
+                <div class="partners-grid">
+                    <!-- Partner logos -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>
+                    <a href="tel:0800668539" class="contact-link">
+                        <i data-lucide="phone"></i> 0800 668 539
+                    </a><br>
+                    <a href="mailto:info@twomountains.co.za" class="contact-link">
+                        <i data-lucide="mail"></i> info@twomountains.co.za
+                    </a><br>
+                    <a href="#" class="contact-link">
+                        <i data-lucide="map-pin"></i> 88 2nd Street, Halfway House
+                        Estate, Midrand, 1685
+                    </a>
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Business Hours</h3>
+                <p>
+                    Monday - Friday: 8:00 - 17:00<br>
+                    Saturday: 8:00 - 13:00<br>
+                    Sunday: Closed
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Branch Locator</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Abathuthuzeli. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts/home.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
