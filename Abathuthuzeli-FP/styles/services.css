@@ -32,6 +32,7 @@
     background-color: var(--gray-50);
 }
 
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

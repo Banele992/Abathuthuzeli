@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#2563eb">
     <title>Abathuthuzeli - Funeral Parlour</title>
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/pages.css">
     <link rel="stylesheet" href="styles/components.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
@@ -20,12 +20,14 @@
     <script src="js/main.js" defer></script>
     <script src="js/pages.js" defer></script>
     <script src="js/components.js" defer></script>
-    <!-- Swiper JS for testimonials -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <nav class="navbar2">
+    <nav class="navbar">
         <div class="navbar-container">
             <div class="navbar-content">
                 <!-- Logo -->
@@ -110,6 +112,20 @@
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- About Us Preview Section -->
+        <section class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <h2>ABATHUTHUZELI FUNERAL PARLOUR</h2>
+                    <p>At Abathuthuzeli Funeral Parlour we strive to set the highest standards for the funeral profession in terms of client service and care for the deceased. We help people through one of the most difficult times in their lives.</p>
+                    <a href="/pages/about.html" class="btn-primary">READ MORE</a>
+                </div>
+                <div class="about-image">
+                    <img src="/img/funeral-staff.jpg" alt="Funeral Staff">
+                </div>
             </div>
         </section>
 
@@ -206,36 +222,82 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i data-lucide="quote"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Two Mountains made a difficult time much easier for our family. 
+                                    Their service was professional and compassionate."
+                                </p>
+                                <div class="testimonial-author">
+                                    <h4>Sarah M.</h4>
+                                    <p>Johannesburg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i data-lucide="quote"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Two Mountains made a difficult time much easier for our family. 
+                                    Their service was professional and compassionate."
+                                </p>
+                                <div class="testimonial-author">
+                                    <h4>Sarah M.</h4>
+                                    <p>Johannesburg</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <i data-lucide="quote"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Two Mountains made a difficult time much easier for our family. 
+                                    Their service was professional and compassionate."
+                                </p>
+                                <div class="testimonial-author">
+                                    <h4>Sarah M.</h4>
+                                    <p>Johannesburg</p>
+                                </div>
+                            </div>
+                        </div>
                         <!-- Add more testimonial slides as needed -->
                     </div>
+                    <!-- Add navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
 
-        <section class="partners">
-            <div class="container">
-                <h2>OUR PARTNERS</h2>
-                <div class="partners-grid">
-                    <!-- Partner logos -->
-                </div>
-            </div>
-        </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
+                <a href="/" class="footer-logo-tag">
+                    <img src="/img/Abathuthuzeli-Logo.png" alt="Abathuthuzeli Logo" class="footer-logo-img">
+                </a>
+            </div>
+            <div class="footer-section">
                 <h3>Contact Us</h3>
                 <p>
-                    <a href="tel:0800668539" class="contact-link">
-                        <i data-lucide="phone"></i> 0800 668 539
+                    <a href="tel:+27724978612" class="contact-link">
+                        <i class="fas fa-phone"></i> +27 72 497 8612
                     </a><br>
-                    <a href="mailto:info@twomountains.co.za" class="contact-link">
-                        <i data-lucide="mail"></i> info@twomountains.co.za
+                    <a href="mailto:info@abathuthuzeli.co.za" class="contact-link">
+                        <i class="fas fa-envelope"></i> info@abathuthuzeli.co.za
                     </a><br>
-                    <a href="#" class="contact-link">
-                        <i data-lucide="map-pin"></i> 88 2nd Street, Halfway House
-                        Estate, Midrand, 1685
+                    <a href="https://maps.app.goo.gl/amL6fmh9xJsWnB4WA" target="_blank" rel="noopener" class="contact-link">
+                        <i class="fas fa-location-dot"></i> Sandton,Johannesburg
                     </a>
                 </p>
             </div>
@@ -244,24 +306,15 @@
                 <h3>Business Hours</h3>
                 <p>
                     Monday - Friday: 8:00 - 17:00<br>
-                    Saturday: 8:00 - 13:00<br>
+                    Saturday: Closed<br>
                     Sunday: Closed
                 </p>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                    <li><a href="#">Branch Locator</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
+            </div>          
+           
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2024 Abathuthuzeli. All rights reserved.</p>
+            <p>&copy; 2025 Abathuthuzeli Funeral Parlour. All rights reserved.</p>
         </div>
     </footer>
     <script src="scripts/home.js"></script>

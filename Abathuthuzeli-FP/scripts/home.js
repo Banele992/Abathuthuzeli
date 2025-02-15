@@ -30,26 +30,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Initialize Swiper for testimonials
-    const testimonialSwiper = new Swiper('.testimonials-slider', {
+    const testimonialsSlider = new Swiper('.testimonials-slider', {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
         autoplay: {
-            delay: 5000,
+            delay: 2000,
             disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
         },
         breakpoints: {
-            640: {
+            768: {
                 slidesPerView: 2,
             },
             1024: {
                 slidesPerView: 3,
-            },
-        }
+            }
+        },
+        effect: 'slide',
+        speed: 300,
     });
 
     // Callback form submission
